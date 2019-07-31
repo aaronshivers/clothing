@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import ShopPage from './pages/ShopPage'
-import HatsPage from './pages/HatsPage'
+import SignInPage from './pages/SignInPage'
 import NotFoundPage from './pages/NotFoundPage'
 import Header from './components/Header'
 
@@ -12,7 +12,7 @@ const App = () => (
     <Switch>
       <Route path="/" exact component={ HomePage } />
       <Route path="/shop" exact component={ ShopPage } />
-      <Route path="/shop/hats" component={ HatsPage } />
+      <Route path="/signin" component={ SignInPage } />
       <Route component={ NotFoundPage } />
     </Switch>
   </Router>
