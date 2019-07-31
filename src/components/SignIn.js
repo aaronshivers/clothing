@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import FormInput from './FormInput'
 import CustomButton from './CustomButton'
+import { signInWithGoogle } from '../db/firebase'
 
 const SignInPage = () => {
   const [ email, setEmail ] = useState('')
@@ -35,6 +36,9 @@ const SignInPage = () => {
           handleChange={ e => setPassword(e.target.value) }
         />
         <CustomButton>sign in</CustomButton>
+        <CustomButton onClick={ signInWithGoogle }>
+          sign in with google
+        </CustomButton>
       </form>
     </div>
   )
