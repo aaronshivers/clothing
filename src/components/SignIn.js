@@ -35,10 +35,12 @@ const SignInPage = () => {
           required
           handleChange={ e => setPassword(e.target.value) }
         />
-        <CustomButton>sign in</CustomButton>
-        <CustomButton onClick={ signInWithGoogle }>
-          sign in with google
-        </CustomButton>
+        <div className='buttons'>
+          <CustomButton>sign in</CustomButton>
+          <CustomButton onClick={ signInWithGoogle } isGoogleSignIn>
+            sign in with google
+          </CustomButton>
+        </div>
       </form>
     </div>
   )
