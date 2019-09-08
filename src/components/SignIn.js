@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import FormInput from './FormInput'
-import CustomButton from './CustomButton'
+import FormInput from './form-input/form-input.component'
+import CustomButton from './custom-button/custom-button.component'
 import { signInWithGoogle } from '../db/firebase'
 
 const SignInPage = () => {
@@ -20,7 +20,7 @@ const SignInPage = () => {
         <FormInput
           name="email"
           type="email"
-          label="email"
+          label="Email"
           autoComplete="email"
           value={ email }
           required
@@ -29,7 +29,7 @@ const SignInPage = () => {
         <FormInput
           name="password"
           type="password"
-          label="password"
+          label="Password"
           autoComplete="password"
           value={ password }
           required
