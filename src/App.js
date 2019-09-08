@@ -31,8 +31,6 @@ const App = () => {
     return () => unsubscribeFromAuth()
   }, [])
 
-  useEffect(() => console.log(currentUser), [currentUser])
-
   return (
     <Router>
       <Header currentUser={currentUser} />

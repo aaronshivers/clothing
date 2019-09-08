@@ -26,7 +26,7 @@ const Signup = () => {
       setConfirmPassword('')
 
     } catch (error) {
-      console.error(error)
+      console.error(error.message)
     }
   }
   
