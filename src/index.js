@@ -1,13 +1,14 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { render } from 'react-dom'
 import { Provider } from 'react-redux'
-import './styles/styles.scss'
+import store from './redux/store'
 import App from './App'
+import './styles/styles.scss'
 
 const appProvider = (
-  <Provider>
+  <Provider store={store}>
     <App />
   </Provider>
 )
 
-ReactDOM.render(appProvider, document.getElementById('root'))
+render(appProvider, document.getElementById('root'))
